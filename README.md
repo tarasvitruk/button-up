@@ -9,6 +9,7 @@
 Найти крутые иконки и кнопки можно на www.iconfinder.com.
 
 <h3>Теперь нужно открыть CSS-редактор и добавить стили для кнопки:</h3>
+
 ``` html
 #scrollup {
 position: fixed; /* фиксированная позиция */
@@ -24,6 +25,7 @@ display: none; /* спрятать блок */
 cursor: pointer;
 }
 ```
+
 Далее либо добавляем js-код в уже существующий файл с остальными скриптами, либо подключаем новый:
 ``` html
 <script type='text/javascript' src='/js/scrollup.js'></script>
@@ -33,6 +35,7 @@ cursor: pointer;
 <h1>Вариант №1: с использованием jQuery</h1>
 
 <h3>Если у вас уже подключена jQuery, нужно сделать следующее: в scrollup.js добавляйте такой код:</h3>
+
 ``` html
 jQuery( document ).ready(function() {
 	jQuery('#scrollup img').mouseover( function(){
@@ -53,6 +56,7 @@ jQuery( document ).ready(function() {
 	});
 });
 ```
+
 Если jQuery еще не подключен, тогда перед подключением scrollup.js нужно подключить ее:
 ``` html
 <script type='text/javascript' src='http://code.jquery.com/jquery-latest.min.js'></script>
