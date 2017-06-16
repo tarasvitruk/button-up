@@ -8,7 +8,7 @@
 
 Найти крутые иконки и кнопки можно на www.iconfinder.com.
 Теперь нужно открыть CSS-редактор и добавить стили для кнопки:
-
+``` html
 #scrollup {
 position: fixed; /* фиксированная позиция */
 opacity: 0.8; /* прозрачность */
@@ -22,15 +22,17 @@ bottom: 10px; /* отступ снизу */
 display: none; /* спрятать блок */
 cursor: pointer;
 }
+```
 Далее либо добавляем js-код в уже существующий файл с остальными скриптами, либо подключаем новый:
-
+``` html
 <script type='text/javascript' src='/js/scrollup.js'></script>
+```
 Дальше нужно написать саму функцию скролла.
 
 <h1>Вариант №1: с использованием jQuery</h1>
 
 Если у вас уже подключена jQuery, нужно сделать следующее: в scrollup.js добавляйте такой код:
-
+``` html
 jQuery( document ).ready(function() {
 	jQuery('#scrollup img').mouseover( function(){
 		jQuery( this ).animate({opacity: 0.65},100);
@@ -49,13 +51,16 @@ jQuery( document ).ready(function() {
 		}
 	});
 });
+```
 Если jQuery еще не подключен, тогда перед подключением scrollup.js нужно подключить ее:
-
+``` html
 <script type='text/javascript' src='http://code.jquery.com/jquery-latest.min.js'></script>
+```
+
 <h1>Вариант №2: на простом js</h1>
 
 Если вы любите простоту, можно обойтись простым javascript:
-
+``` html
 window.onload = function() { // после загрузки страницы
 
 	var scrollUp = document.getElementById('scrollup'); // найти элемент
@@ -84,6 +89,7 @@ window.onload = function() { // после загрузки страницы
 		}
 	};
 };
+```
 Посмотреть и скачать
 
 Теперь у вас есть два способа добавить кнопку “прокрутить вверх” себе на сайт. Пример вы можете увидеть здесь:
