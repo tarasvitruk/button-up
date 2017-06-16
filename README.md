@@ -65,6 +65,7 @@ jQuery( document ).ready(function() {
 <h1>Вариант №2: на простом js</h1>
 
 <h3>Если вы любите простоту, можно обойтись простым javascript:<h3>
+
 ``` html
 window.onload = function() { // после загрузки страницы
 
